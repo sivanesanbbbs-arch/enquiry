@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from "react";
 import "./admin.css";
 
-const API = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000").replace(/\/$/, "");
+const API = (process.env.NEXT_PUBLIC_API_URL || "https://sivabbbs123.pythonanywhere.com").replace(/\/$/, "");
 const AREAS = ["Executive education programme", "General management", "Leadership and strategy", "Finance and business analytics", "Operations and supply chain", "Digital transformation", "Other / Not sure yet"];
 const LABELS = [["fullName", "Full name"], ["email", "Email"], ["phone", "Mobile"], ["city", "City"], ["areaOfInterest", "Area of interest"], ["learningMode", "Learning mode"], ["startPeriod", "Start period"], ["source", "Heard via"], ["qualification", "Qualification"], ["specialisation", "Specialisation"], ["experience", "Work experience"], ["designation", "Designation"], ["organisation", "Organisation"], ["industry", "Industry"], ["contactTime", "Contact time"], ["message", "Enquiry message"]];
 const fmt = (iso) => (iso ? new Date(iso).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" }) : "-");
