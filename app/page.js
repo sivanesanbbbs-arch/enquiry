@@ -155,7 +155,7 @@ export default function Page() {
               <h2>Enquiry received</h2>
               <p>Thank you. Our team will respond using the email and phone number you provided.</p>
               <p className="ref">Reference number <strong>{done}</strong></p>
-              // <button type="button" onClick={() => setDone(null)}>Submit another enquiry</button>
+              <button type="button" onClick={() => setDone(null)}>Submit another enquiry</button>
             </div>
           ) : (
             <>
