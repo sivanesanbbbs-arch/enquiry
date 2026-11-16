@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 
-const API = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000").replace(/\/$/, "");
+const API = (process.env.NEXT_PUBLIC_API_URL || "https://sivabbbs123.pythonanywhere.com").replace(/\/$/, "");
 
 // [code, label, minDigits, maxDigits] - keep in sync with backend COUNTRIES
 const COUNTRIES = [
